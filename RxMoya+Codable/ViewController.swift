@@ -17,15 +17,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var button: UIButton!
     
-    fileprivate let provider: MoyaProvider<UserAPI> = {
-        let stubClosure = { (target: UserAPI) -> StubBehavior in
-            return .never
-        }
-        let networkLoggerPlugin = NetworkLoggerPlugin(cURL: true)
-        let plugins = [networkLoggerPlugin]
-        return MoyaProvider<UserAPI>(stubClosure: stubClosure, plugins: plugins)
-    }()
-    
     var viewModel: ViewModel!
     private let disposeBag = DisposeBag()
     

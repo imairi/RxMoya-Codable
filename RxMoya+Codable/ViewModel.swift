@@ -21,7 +21,7 @@ class ViewModel {
     
     fileprivate let provider: MoyaProvider<UserAPI> = {
         let stubClosure = { (target: UserAPI) -> StubBehavior in
-            return .immediate
+            return .never
         }
         let networkLoggerPlugin = NetworkLoggerPlugin(cURL: true)
         let plugins = [networkLoggerPlugin]
