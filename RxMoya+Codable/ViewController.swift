@@ -7,19 +7,40 @@
 //
 
 import UIKit
+import RxMoya
+import Moya
+import RxSwift
+import RxCocoa
+import Alamofire
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var button: UIButton!
+    
+    fileprivate let provider: MoyaProvider<UserAPI> = {
+        let stubClosure = { (target: UserAPI) -> StubBehavior in
+            return .never
+        }
+        let networkLoggerPlugin = NetworkLoggerPlugin(cURL: true)
+        let plugins = [networkLoggerPlugin]
+        return MoyaProvider<UserAPI>(stubClosure: stubClosure, plugins: plugins)
+    }()
+    
+    var viewModel: ViewModel!
+    private let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let input = ViewModel.Input(tapButton: button.rx.tap.asObservable())
+        viewModel = ViewModel(input: input)
+        
+        viewModel.didFinishGetUsers
+            .subscribe(onNext: { users in
+                print(users)
+            }, onError: { (error) in
+                print(error)
+            })
+            .disposed(by: disposeBag)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
-

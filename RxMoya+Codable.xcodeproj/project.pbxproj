@@ -14,6 +14,18 @@
 		4028BA031F656CD30082FFA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4028BA011F656CD30082FFA0 /* LaunchScreen.storyboard */; };
 		4028BA0E1F656CD30082FFA0 /* RxMoya_CodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4028BA0D1F656CD30082FFA0 /* RxMoya_CodableTests.swift */; };
 		4028BA191F656CD30082FFA0 /* RxMoya_CodableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4028BA181F656CD30082FFA0 /* RxMoya_CodableUITests.swift */; };
+		4028BA311F65791A0082FFA0 /* ReactiveMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4028BA281F65791A0082FFA0 /* ReactiveMoya.framework */; };
+		4028BA321F65791A0082FFA0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4028BA291F65791A0082FFA0 /* Alamofire.framework */; };
+		4028BA331F65791A0082FFA0 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4028BA2A1F65791A0082FFA0 /* RxCocoa.framework */; };
+		4028BA341F65791A0082FFA0 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4028BA2B1F65791A0082FFA0 /* RxSwift.framework */; };
+		4028BA351F65791A0082FFA0 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4028BA2C1F65791A0082FFA0 /* RxBlocking.framework */; };
+		4028BA361F65791A0082FFA0 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4028BA2D1F65791A0082FFA0 /* RxMoya.framework */; };
+		4028BA371F65791A0082FFA0 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4028BA2E1F65791A0082FFA0 /* Result.framework */; };
+		4028BA381F65791A0082FFA0 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4028BA2F1F65791A0082FFA0 /* Moya.framework */; };
+		4028BA391F65791A0082FFA0 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4028BA301F65791A0082FFA0 /* ReactiveSwift.framework */; };
+		4039A5281F66C0A3006BBD23 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4039A5271F66C0A3006BBD23 /* ViewModel.swift */; };
+		4039A52A1F66C0B5006BBD23 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4039A5291F66C0B5006BBD23 /* Model.swift */; };
+		4039A52C1F66C8D7006BBD23 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 4039A52B1F66C8D7006BBD23 /* sample.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +59,18 @@
 		4028BA141F656CD30082FFA0 /* RxMoya+CodableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxMoya+CodableUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4028BA181F656CD30082FFA0 /* RxMoya_CodableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMoya_CodableUITests.swift; sourceTree = "<group>"; };
 		4028BA1A1F656CD30082FFA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4028BA281F65791A0082FFA0 /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMoya.framework; path = Carthage/Build/iOS/ReactiveMoya.framework; sourceTree = "<group>"; };
+		4028BA291F65791A0082FFA0 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		4028BA2A1F65791A0082FFA0 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		4028BA2B1F65791A0082FFA0 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		4028BA2C1F65791A0082FFA0 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		4028BA2D1F65791A0082FFA0 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
+		4028BA2E1F65791A0082FFA0 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		4028BA2F1F65791A0082FFA0 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		4028BA301F65791A0082FFA0 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		4039A5271F66C0A3006BBD23 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		4039A5291F66C0B5006BBD23 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4039A52B1F66C8D7006BBD23 /* sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +78,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4028BA311F65791A0082FFA0 /* ReactiveMoya.framework in Frameworks */,
+				4028BA321F65791A0082FFA0 /* Alamofire.framework in Frameworks */,
+				4028BA331F65791A0082FFA0 /* RxCocoa.framework in Frameworks */,
+				4028BA341F65791A0082FFA0 /* RxSwift.framework in Frameworks */,
+				4028BA351F65791A0082FFA0 /* RxBlocking.framework in Frameworks */,
+				4028BA361F65791A0082FFA0 /* RxMoya.framework in Frameworks */,
+				4028BA371F65791A0082FFA0 /* Result.framework in Frameworks */,
+				4028BA381F65791A0082FFA0 /* Moya.framework in Frameworks */,
+				4028BA391F65791A0082FFA0 /* ReactiveSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +114,7 @@
 				4028BA0C1F656CD30082FFA0 /* RxMoya+CodableTests */,
 				4028BA171F656CD30082FFA0 /* RxMoya+CodableUITests */,
 				4028B9F61F656CD30082FFA0 /* Products */,
+				4028BA271F6579190082FFA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +137,9 @@
 				4028B9FF1F656CD30082FFA0 /* Assets.xcassets */,
 				4028BA011F656CD30082FFA0 /* LaunchScreen.storyboard */,
 				4028BA041F656CD30082FFA0 /* Info.plist */,
+				4039A5271F66C0A3006BBD23 /* ViewModel.swift */,
+				4039A5291F66C0B5006BBD23 /* Model.swift */,
+				4039A52B1F66C8D7006BBD23 /* sample.json */,
 			);
 			path = "RxMoya+Codable";
 			sourceTree = "<group>";
@@ -125,6 +162,22 @@
 			path = "RxMoya+CodableUITests";
 			sourceTree = "<group>";
 		};
+		4028BA271F6579190082FFA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4028BA291F65791A0082FFA0 /* Alamofire.framework */,
+				4028BA2F1F65791A0082FFA0 /* Moya.framework */,
+				4028BA281F65791A0082FFA0 /* ReactiveMoya.framework */,
+				4028BA301F65791A0082FFA0 /* ReactiveSwift.framework */,
+				4028BA2E1F65791A0082FFA0 /* Result.framework */,
+				4028BA2C1F65791A0082FFA0 /* RxBlocking.framework */,
+				4028BA2A1F65791A0082FFA0 /* RxCocoa.framework */,
+				4028BA2D1F65791A0082FFA0 /* RxMoya.framework */,
+				4028BA2B1F65791A0082FFA0 /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +188,7 @@
 				4028B9F11F656CD30082FFA0 /* Sources */,
 				4028B9F21F656CD30082FFA0 /* Frameworks */,
 				4028B9F31F656CD30082FFA0 /* Resources */,
+				4028BA261F65781F0082FFA0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -233,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4028BA031F656CD30082FFA0 /* LaunchScreen.storyboard in Resources */,
+				4039A52C1F66C8D7006BBD23 /* sample.json in Resources */,
 				4028BA001F656CD30082FFA0 /* Assets.xcassets in Resources */,
 				4028B9FE1F656CD30082FFA0 /* Main.storyboard in Resources */,
 			);
@@ -254,13 +309,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4028BA261F65781F0082FFA0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveMoya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxMoya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4028B9F11F656CD30082FFA0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4028B9FB1F656CD30082FFA0 /* ViewController.swift in Sources */,
+				4039A5281F66C0A3006BBD23 /* ViewModel.swift in Sources */,
 				4028B9F91F656CD30082FFA0 /* AppDelegate.swift in Sources */,
+				4039A52A1F66C0B5006BBD23 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +509,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "RxMoya+Codable/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.imairi.RxMoya-Codable";
@@ -441,6 +527,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "RxMoya+Codable/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.imairi.RxMoya-Codable";
