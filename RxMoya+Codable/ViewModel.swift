@@ -37,17 +37,19 @@ class ViewModel {
         
         input.tapButton
             .flatMap { self.provider.rx.request(UserAPI.fetch) }
-            .subscribe(onNext: { (response) in
-                do {
-                    let decoder = JSONDecoder()
-                    let users = try decoder.decode([User].self, from: response.data)
-                    didFinishGetUsersSubject.onNext(users)
-                } catch(let error) {
-                    didFinishGetUsersSubject.onError(error)
-                }
-            }, onError: { (error) in
-                didFinishGetUsersSubject.onError(error)
+            .flatMap({ (response) -> Observable<[User]> in
+                return Observable<[User]>.create({ (observer) -> Disposable in
+                    do {
+                        let decoder = JSONDecoder()
+                        let users = try decoder.decode([User].self, from: response.data)
+                        observer.onNext(users)
+                    } catch(let error) {
+                        observer.onError(error)
+                    }
+                    return Disposables.create()
+                })
             })
+            .bind(to: didFinishGetUsersSubject)
             .disposed(by: disposeBag)
     }
 }
